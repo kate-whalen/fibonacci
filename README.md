@@ -31,6 +31,24 @@ Stop the container with the command:
 docker-compose down
 ```
 
+## Running Locally (alternative)
+
+### Prerequisites:
+1. Python 3.9 (or later): https://www.python.org/downloads/
+2. pipenv: https://pypi.org/project/pipenv/
+
+### Setup:
+```bash
+pipenv shell
+pipenv install
+flask run app/app.py
+```
+### Testing:
+
+```bash
+python -m unittest
+```
+
 ## TODO
 
 - [ ] Production deployment guide

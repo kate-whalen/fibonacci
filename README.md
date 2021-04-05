@@ -9,7 +9,7 @@ A Python Flask server that will respond to GET requests on http://localhost:8080
 2. Install Docker Compose: https://docs.docker.com/compose/install/
 
 ### Setup:
-The `start.sh` script will start a Docker container in the background. The script can be re-run to rebuild or restart the container. Restarting the container will return you to the beginning of the fibonacci sequence.
+The `start.sh` script will start a Docker container in the background. The script can be re-run to rebuild the container.
 
 If the `start.sh` script is not executable, you may need to make it executable by running `chmod +x start.sh` from this directory.
 
@@ -24,6 +24,8 @@ docker-compose exec app python -m unittest
 ```
 
 ### Stopping:
+
+Stopping the container will lose all progress through the fibonacci sequence.
 
 Stop the container with the command:
 
